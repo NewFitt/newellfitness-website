@@ -1,19 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Newell Fitness</title>
+<title>Newell Fitness | Coming soon</title>
+<meta name="description" content="Newell Fitness: online workout plans, meal plans and one-to-one consultations. Coming soon.">
+<meta name="theme-color" content="#1d1e23">
 <style>
-body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#fff;color:#1a1a1a;text-align:center;padding:24px}
-h1{font-size:2.6rem;margin:0 0 12px;letter-spacing:.04em;color:#E52623}
-p{font-size:1.15rem;margin:0;color:#444}
+:root{--bg:#1d1e23;--teal:#0b9484;--orange:#f08a24;--text:#f4f6f6;--muted:#a9b2b4}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column;align-items:center;text-align:center}
+.logo{width:100%;max-width:960px;aspect-ratio:16/9;background:var(--bg) center/contain no-repeat url(assets/logo-final.png)}
+.logo video{width:100%;height:100%;display:block;object-fit:contain;-webkit-mask-image:radial-gradient(ellipse at center,#000 70%,transparent 100%);mask-image:radial-gradient(ellipse at center,#000 70%,transparent 100%)}
+main{padding:0 24px 40px;max-width:640px;width:100%}
+h1{font-size:clamp(1.8rem,5vw,2.6rem);margin:0 0 8px;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+.sub{margin:0 0 28px;color:var(--muted);font-size:1.05rem}
+ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+li{padding:16px 20px;border:1px solid #2f3539;border-left:4px solid var(--orange);border-radius:8px;background:#23282b;font-size:1.1rem;text-align:left}
+footer{margin-top:auto;padding:24px;color:var(--muted);font-size:.85rem}
+@media (prefers-reduced-motion:reduce){.logo video{display:none}}
 </style>
 </head>
 <body>
+<div class="logo" role="img" aria-label="Newell Fitness. Working with you to reach your goals.">
+<video autoplay muted playsinline preload="auto" poster="assets/logo-final.png" aria-hidden="true">
+<source src="assets/logo-dark.mp4" type="video/mp4">
+</video>
+</div>
 <main>
-<h1>Newell Fitness</h1>
-<p>Online fitness programmes for busy adults, including shift workers. Coming soon.</p>
+<h1>Coming soon</h1>
+<p class="sub">Online fitness made to fit around your life. Here is what we are working on:</p>
+<ul>
+<li>Workout plans</li>
+<li>Meal plans</li>
+<li>One-to-one consultations</li>
+</ul>
 </main>
+<footer>&copy; 2026 Newell Fitness</footer>
 </body>
 </html>
